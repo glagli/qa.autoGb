@@ -42,8 +42,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public Integer delete(Integer id) {
+    public void delete(Integer id) {
         userRepository.deleteById(id);
-        return id;
     }
 }

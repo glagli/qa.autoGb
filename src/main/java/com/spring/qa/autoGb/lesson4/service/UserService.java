@@ -12,5 +12,5 @@ public interface UserService {
 
     User getById(Integer id);
 
-    Integer delete(Integer id);
+    void delete(Integer id);
 }

@@ -58,9 +58,9 @@ public class UserIntegrationWithMockTest {
         user.setAge(50);
         user.setFirstName("First Name");
         user.setSecondName("Second Name");
-        //Mockito.when(userService.getById(Mockito.anyInt())).thenReturn(user);
+        Mockito.when(userService.getById(Mockito.anyInt())).thenReturn(user);
 
-        Mockito.when(userService.delete(Mockito.anyInt())).thenReturn(user.getId());
+        Mockito.doNothing().when(userService).delete(Mockito.anyInt());
 
     }
 
