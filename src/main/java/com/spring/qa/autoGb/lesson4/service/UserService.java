@@ -2,6 +2,7 @@ package com.spring.qa.autoGb.lesson4.service;
 
 
 import com.spring.qa.autoGb.lesson2.example.dto.User;
+import org.springframework.web.client.HttpStatusCodeException;
 
 public interface UserService {
 
